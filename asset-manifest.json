@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mairimac/WADquiz/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/mairimac/WADquiz/static/js/main.f6903629.chunk.js",
+    "main.js.map": "/mairimac/WADquiz/static/js/main.f6903629.chunk.js.map",
+    "runtime-main.js": "/mairimac/WADquiz/static/js/runtime-main.d05b2e44.js",
+    "runtime-main.js.map": "/mairimac/WADquiz/static/js/runtime-main.d05b2e44.js.map",
+    "static/js/2.889ead92.chunk.js": "/mairimac/WADquiz/static/js/2.889ead92.chunk.js",
+    "static/js/2.889ead92.chunk.js.map": "/mairimac/WADquiz/static/js/2.889ead92.chunk.js.map",
+    "index.html": "/mairimac/WADquiz/index.html",
+    "precache-manifest.57e3587209722b3ceb935a80004deaba.js": "/mairimac/WADquiz/precache-manifest.57e3587209722b3ceb935a80004deaba.js",
+    "service-worker.js": "/mairimac/WADquiz/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/mairimac/WADquiz/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.889ead92.chunk.js.LICENSE.txt": "/mairimac/WADquiz/static/js/2.889ead92.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d05b2e44.js",
+    "static/js/2.889ead92.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.f6903629.chunk.js"
+  ]
+}
