@@ -9,9 +9,9 @@ class QuestionList extends Component {
 
 const questionKeys= Object.keys(this.props.questions);
 
-    const questions = this.props.questions.map((question) => (
+    const questions = this.props.questions[0].map((question) => (
       <Questions
-      questionText={question.questionText}
+      questionText={question.questionText[0]}
       />
 
     ))
