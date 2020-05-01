@@ -20,7 +20,7 @@ render(){
               )} />
       <Route exact path='/feedback' render={() =>(
         <FeedbackScreen/>
-                      )} />
+                      )}/>
     </div>
   );
 }

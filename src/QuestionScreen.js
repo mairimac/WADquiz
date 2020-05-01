@@ -28,10 +28,23 @@ class QuestionScreen extends Component {
       <div className="container">
 
         {questionKeys.map((questionKey) => {
-          return (<Questions
+          return (
+<div>
+            <Questions
             key={questionKey}
             questionText={this.state.questions[questionKey].questionText}
             />
+          <AnswerOptions
+          key={this.state.questions[questionKey].id}
+          questionKey={questionKey}
+          answers={this.state.questions[questionKey].answers}
+          questions={questions}
+
+          />
+      </div>
+
+
+
         )
   })}
 
