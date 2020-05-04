@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import QuizList from './QuizList';
 
 
-class QuizDetails extends Component {
 
+class QuizDetails extends Component {
 
   render () {
     return (
@@ -14,7 +14,7 @@ class QuizDetails extends Component {
               <div className ="card-body text-center">
                   <p className ="card-text">Number of questions: {this.props.number}, {this.props.quiz_id} </p>
                       <Link
-                      to='/quiz'
+                      to={`/quiz/${this.props.quiz_id}`}
                       className="btn btn-primary mb-3">Start</Link>
               </div>
         </div>
