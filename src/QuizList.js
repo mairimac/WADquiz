@@ -23,6 +23,8 @@ DataAPI.getAllQuizzes()
 }
 
 
+
+
 render(){
   const quizKeys = Object.keys(this.state.quizzes)
   console.log(quizKeys)
@@ -36,10 +38,12 @@ render(){
           <div>
           <QuizDetails
           key={quizKey}
-          name={this.state.quizzes[quizKey].name}
-          number={this.state.quizzes[quizKey].questions.length}
+          name={quizzes[quizKey].name}
+          number={quizzes[quizKey].questions.length}
           quiz_id={this.state.quizzes[quizKey].id}
           questions={this.state.quizzes[quizKey].questions}
+          score={quizzes[quizKey].answeredCorrectly.length}
+          attempted= {quizzes[quizKey].answeredCorrectly.length + quizzes[quizKey].answeredIncorrectly.length}
 
           />
           <QuestionList

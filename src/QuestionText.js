@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
 
-
-
-
 class Questions extends Component {
   render () {
+
+
 
     return (
       <div className="container">
@@ -13,7 +12,7 @@ class Questions extends Component {
           <div className="col-sm">
               <div className="card mb-2">
                   <div className ="text-left card-header">Read the question.</div>
-                   <div className="card-body text-justify"> {this.props.questionText}
+                   <div className="card-body text-justify"> {this.props.questions[this.props.currentKey].questionText}
 
                    </div>
                       <div className="text-center">

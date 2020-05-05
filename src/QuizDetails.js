@@ -12,7 +12,9 @@ class QuizDetails extends Component {
       <div className="card border-dark mb-2">
           <h5 className ="text-center card-header card text-white bg-primary">{this.props.name}</h5>
               <div className ="card-body text-center">
-                  <p className ="card-text">Number of questions: {this.props.number}, {this.props.quiz_id} </p>
+                  <p className ="card-text">Number of questions: {this.props.number}
+                  <br/>Score: {this.props.score}
+                  <br/>Attempted: {this.props.attempted} </p>
                       <Link
                       to={`/quiz/${this.props.quiz_id}`}
                       className="btn btn-primary mb-3">Start</Link>

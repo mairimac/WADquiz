@@ -9,12 +9,15 @@ class QuestionScreen extends Component {
     questions: {},
     quizzes: {},
     quizId: ''
+
   }
 
 
   componentDidMount() {
     const { quiz_id } = this.props.match.params;
     this.setState({ quizId: quiz_id })
+
+
 
     DataAPI.getAllQuestions()
     .then((questions) => {
@@ -34,11 +37,14 @@ class QuestionScreen extends Component {
 
   render()
   {
+
     const questionKeys = Object.keys(this.state.questions)
     const { questions, quizzes, quizId } = this.state
     console.log( 'questions:', questions, 'quizzes:', quizzes, 'quizId:',quizId)
     const currentQuizQuestions = quizzes[quizId] && quizzes[quizId].questions;
     console.log("currentQuizQuestions", currentQuizQuestions)
+    const currentKey = quizzes[quizId] && quizzes[quizId].questionsLeft[0]
+    console.log("currentKey",currentKey)
 
     return (
 
@@ -46,16 +52,17 @@ class QuestionScreen extends Component {
       {currentQuizQuestions && currentQuizQuestions.map((questionKey) => {
           console.log("questionKey", questionKey)
           return (
+
             <div>
               <Questions
                 key={questionKey}
-                questionText={questions[questionKey].questionText}
-
+                currentKey={currentKey}
+                questions={questions}
               />
               <AnswerOptions
-                key={questions[questionKey].id}
-                questionKey={questionKey}
-                answers={this.state.questions[questionKey].answers}
+                key={currentKey}
+                questionKey={currentKey}
+                answers={questions[currentKey].answers}
                 questions={questions}
               />
             </div>        )
